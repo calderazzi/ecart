@@ -1,0 +1,12 @@
+<header>
+  <div class="navbar navbar-dark bg-primary shadow-sm">
+    <div class="navbar-brand align-item-center d-flex">
+      <em style="font-size: 35px;" class='fas fa-shipping-fast'></em> &nbsp;
+      <strong style="font-size: 30px;" >E-cart Wilson Calderazzi</strong>
+    </div>
+    <button routerLink="cart" class="btn btn-primary">
+      <em style="font-size:30px ;" class="fas fa-cart-plus"></em>
+      <div class="badge bg-danger" *ngIf="totalItemNumber">{{totalItemNumber}}</div>
+    </button>
+  </div>
+</header>
