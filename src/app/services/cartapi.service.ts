@@ -21,9 +21,7 @@ export class CartapiService {
   addToCart(product:any) {
     this.cartDataList.push(product);
     this.productList.next(this.cartDataList);
-    this.getTotalAmount();
-    console.log(this.cartDataList);
-    
+    this.getTotalAmount();    
   }
 
   getTotalAmount():number {
